@@ -44,22 +44,292 @@ const students = [
     }
 ];
 
-for (let i = 0; i < students.length; i++) {
-    for (let j = 0; j < students[i].courses.length; j++) {
-        if (students[i].courses[j].score >= 90) students[i].courses[j].letterGrade = 'A';
-        else if (students[i].courses[j].score >= 80) students[i].courses[j].letterGrade = 'B';
-        else if (students[i].courses[j].score >= 70) students[i].courses[j].letterGrade = 'C';
-        else if (students[i].courses[j].score >= 60) students[i].courses[j].letterGrade = 'D';
-        else students[i].courses[j].letterGrade = 'F';
-    }
-    let sum = 0;
-    for (let j = 0; j < students[i].courses.length; j++) {
-        if (students[i].courses[j].letterGrade === 'A') sum += 4;
-        else if (students[i].courses[j].letterGrade === 'B') sum += 3;
-        else if (students[i].courses[j].letterGrade === 'C') sum += 2;
-        else if (students[i].courses[j].letterGrade === 'D') sum += 1;
-    }
-    students[i].gpa = sum / students[i].courses.length;
+// birinchi talaba
+if (students[0].courses[0].score >= 90) {
+    students[0].courses[0].letterGrade = 'A';
+} else if (students[0].courses[0].score >= 80) {
+    students[0].courses[0].letterGrade = 'B';
+} else if (students[0].courses[0].score >= 70) {
+    students[0].courses[0].letterGrade = 'C';
+} else if (students[0].courses[0].score >= 60) {
+    students[0].courses[0].letterGrade = 'D';
+} else {
+    students[0].courses[0].letterGrade = 'F';
 }
+
+if (students[0].courses[1].score >= 90) {
+    students[0].courses[1].letterGrade = 'A';
+} else if (students[0].courses[1].score >= 80) {
+    students[0].courses[1].letterGrade = 'B';
+} else if (students[0].courses[1].score >= 70) {
+    students[0].courses[1].letterGrade = 'C';
+} else if (students[0].courses[1].score >= 60) {
+    students[0].courses[1].letterGrade = 'D';
+} else {
+    students[0].courses[1].letterGrade = 'F';
+}
+
+if (students[0].courses[2].score >= 90) {
+    students[0].courses[2].letterGrade = 'A';
+} else if (students[0].courses[2].score >= 80) {
+    students[0].courses[2].letterGrade = 'B';
+} else if (students[0].courses[2].score >= 70) {
+    students[0].courses[2].letterGrade = 'C';
+} else if (students[0].courses[2].score >= 60) {
+    students[0].courses[2].letterGrade = 'D';
+} else {
+    students[0].courses[2].letterGrade = 'F';
+}
+
+if (students[0].courses[3].score >= 90) {
+    students[0].courses[3].letterGrade = 'A';
+} else if (students[0].courses[3].score >= 80) {
+    students[0].courses[3].letterGrade = 'B';
+} else if (students[0].courses[3].score >= 70) {
+    students[0].courses[3].letterGrade = 'C';
+} else if (students[0].courses[3].score >= 60) {
+    students[0].courses[3].letterGrade = 'D';
+} else {
+    students[0].courses[3].letterGrade = 'F';
+}
+
+let sum1 = 0;
+if (students[0].courses[0].letterGrade === 'A') sum1 = sum1 + 4;
+if (students[0].courses[0].letterGrade === 'B') sum1 = sum1 + 3;
+if (students[0].courses[0].letterGrade === 'C') sum1 = sum1 + 2;
+if (students[0].courses[0].letterGrade === 'D') sum1 = sum1 + 1;
+
+if (students[0].courses[1].letterGrade === 'A') sum1 = sum1 + 4;
+if (students[0].courses[1].letterGrade === 'B') sum1 = sum1 + 3;
+if (students[0].courses[1].letterGrade === 'C') sum1 = sum1 + 2;
+if (students[0].courses[1].letterGrade === 'D') sum1 = sum1 + 1;
+
+if (students[0].courses[2].letterGrade === 'A') sum1 = sum1 + 4;
+if (students[0].courses[2].letterGrade === 'B') sum1 = sum1 + 3;
+if (students[0].courses[2].letterGrade === 'C') sum1 = sum1 + 2;
+if (students[0].courses[2].letterGrade === 'D') sum1 = sum1 + 1;
+
+if (students[0].courses[3].letterGrade === 'A') sum1 = sum1 + 4;
+if (students[0].courses[3].letterGrade === 'B') sum1 = sum1 + 3;
+if (students[0].courses[3].letterGrade === 'C') sum1 = sum1 + 2;
+if (students[0].courses[3].letterGrade === 'D') sum1 = sum1 + 1;
+
+students[0].gpa = sum1 / 4;
+
+// ikkinchi talaba
+if (students[1].courses[0].score >= 90) {
+    students[1].courses[0].letterGrade = 'A';
+} else if (students[1].courses[0].score >= 80) {
+    students[1].courses[0].letterGrade = 'B';
+} else if (students[1].courses[0].score >= 70) {
+    students[1].courses[0].letterGrade = 'C';
+} else if (students[1].courses[0].score >= 60) {
+    students[1].courses[0].letterGrade = 'D';
+} else {
+    students[1].courses[0].letterGrade = 'F';
+}
+
+if (students[1].courses[1].score >= 90) {
+    students[1].courses[1].letterGrade = 'A';
+} else if (students[1].courses[1].score >= 80) {
+    students[1].courses[1].letterGrade = 'B';
+} else if (students[1].courses[1].score >= 70) {
+    students[1].courses[1].letterGrade = 'C';
+} else if (students[1].courses[1].score >= 60) {
+    students[1].courses[1].letterGrade = 'D';
+} else {
+    students[1].courses[1].letterGrade = 'F';
+}
+
+if (students[1].courses[2].score >= 90) {
+    students[1].courses[2].letterGrade = 'A';
+} else if (students[1].courses[2].score >= 80) {
+    students[1].courses[2].letterGrade = 'B';
+} else if (students[1].courses[2].score >= 70) {
+    students[1].courses[2].letterGrade = 'C';
+} else if (students[1].courses[2].score >= 60) {
+    students[1].courses[2].letterGrade = 'D';
+} else {
+    students[1].courses[2].letterGrade = 'F';
+}
+
+if (students[1].courses[3].score >= 90) {
+    students[1].courses[3].letterGrade = 'A';
+} else if (students[1].courses[3].score >= 80) {
+    students[1].courses[3].letterGrade = 'B';
+} else if (students[1].courses[3].score >= 70) {
+    students[1].courses[3].letterGrade = 'C';
+} else if (students[1].courses[3].score >= 60) {
+    students[1].courses[3].letterGrade = 'D';
+} else {
+    students[1].courses[3].letterGrade = 'F';
+}
+
+let sum2 = 0;
+if (students[1].courses[0].letterGrade === 'A') sum2 = sum2 + 4;
+if (students[1].courses[0].letterGrade === 'B') sum2 = sum2 + 3;
+if (students[1].courses[0].letterGrade === 'C') sum2 = sum2 + 2;
+if (students[1].courses[0].letterGrade === 'D') sum2 = sum2 + 1;
+
+if (students[1].courses[1].letterGrade === 'A') sum2 = sum2 + 4;
+if (students[1].courses[1].letterGrade === 'B') sum2 = sum2 + 3;
+if (students[1].courses[1].letterGrade === 'C') sum2 = sum2 + 2;
+if (students[1].courses[1].letterGrade === 'D') sum2 = sum2 + 1;
+
+if (students[1].courses[2].letterGrade === 'A') sum2 = sum2 + 4;
+if (students[1].courses[2].letterGrade === 'B') sum2 = sum2 + 3;
+if (students[1].courses[2].letterGrade === 'C') sum2 = sum2 + 2;
+if (students[1].courses[2].letterGrade === 'D') sum2 = sum2 + 1;
+
+if (students[1].courses[3].letterGrade === 'A') sum2 = sum2 + 4;
+if (students[1].courses[3].letterGrade === 'B') sum2 = sum2 + 3;
+if (students[1].courses[3].letterGrade === 'C') sum2 = sum2 + 2;
+if (students[1].courses[3].letterGrade === 'D') sum2 = sum2 + 1;
+
+students[1].gpa = sum2 / 4;
+
+// uchinchi talaba
+if (students[2].courses[0].score >= 90) {
+    students[2].courses[0].letterGrade = 'A';
+} else if (students[2].courses[0].score >= 80) {
+    students[2].courses[0].letterGrade = 'B';
+} else if (students[2].courses[0].score >= 70) {
+    students[2].courses[0].letterGrade = 'C';
+} else if (students[2].courses[0].score >= 60) {
+    students[2].courses[0].letterGrade = 'D';
+} else {
+    students[2].courses[0].letterGrade = 'F';
+}
+
+if (students[2].courses[1].score >= 90) {
+    students[2].courses[1].letterGrade = 'A';
+} else if (students[2].courses[1].score >= 80) {
+    students[2].courses[1].letterGrade = 'B';
+} else if (students[2].courses[1].score >= 70) {
+    students[2].courses[1].letterGrade = 'C';
+} else if (students[2].courses[1].score >= 60) {
+    students[2].courses[1].letterGrade = 'D';
+} else {
+    students[2].courses[1].letterGrade = 'F';
+}
+
+if (students[2].courses[2].score >= 90) {
+    students[2].courses[2].letterGrade = 'A';
+} else if (students[2].courses[2].score >= 80) {
+    students[2].courses[2].letterGrade = 'B';
+} else if (students[2].courses[2].score >= 70) {
+    students[2].courses[2].letterGrade = 'C';
+} else if (students[2].courses[2].score >= 60) {
+    students[2].courses[2].letterGrade = 'D';
+} else {
+    students[2].courses[2].letterGrade = 'F';
+}
+
+if (students[2].courses[3].score >= 90) {
+    students[2].courses[3].letterGrade = 'A';
+} else if (students[2].courses[3].score >= 80) {
+    students[2].courses[3].letterGrade = 'B';
+} else if (students[2].courses[3].score >= 70) {
+    students[2].courses[3].letterGrade = 'C';
+} else if (students[2].courses[3].score >= 60) {
+    students[2].courses[3].letterGrade = 'D';
+} else {
+    students[2].courses[3].letterGrade = 'F';
+}
+
+let sum3 = 0;
+if (students[2].courses[0].letterGrade === 'A') sum3 = sum3 + 4;
+if (students[2].courses[0].letterGrade === 'B') sum3 = sum3 + 3;
+if (students[2].courses[0].letterGrade === 'C') sum3 = sum3 + 2;
+if (students[2].courses[0].letterGrade === 'D') sum3 = sum3 + 1;
+
+if (students[2].courses[1].letterGrade === 'A') sum3 = sum3 + 4;
+if (students[2].courses[1].letterGrade === 'B') sum3 = sum3 + 3;
+if (students[2].courses[1].letterGrade === 'C') sum3 = sum3 + 2;
+if (students[2].courses[1].letterGrade === 'D') sum3 = sum3 + 1;
+
+if (students[2].courses[2].letterGrade === 'A') sum3 = sum3 + 4;
+if (students[2].courses[2].letterGrade === 'B') sum3 = sum3 + 3;
+if (students[2].courses[2].letterGrade === 'C') sum3 = sum3 + 2;
+if (students[2].courses[2].letterGrade === 'D') sum3 = sum3 + 1;
+
+if (students[2].courses[3].letterGrade === 'A') sum3 = sum3 + 4;
+if (students[2].courses[3].letterGrade === 'B') sum3 = sum3 + 3;
+if (students[2].courses[3].letterGrade === 'C') sum3 = sum3 + 2;
+if (students[2].courses[3].letterGrade === 'D') sum3 = sum3 + 1;
+
+students[2].gpa = sum3 / 4;
+
+// to'rtinchi talaba
+if (students[3].courses[0].score >= 90) {
+    students[3].courses[0].letterGrade = 'A';
+} else if (students[3].courses[0].score >= 80) {
+    students[3].courses[0].letterGrade = 'B';
+} else if (students[3].courses[0].score >= 70) {
+    students[3].courses[0].letterGrade = 'C';
+} else if (students[3].courses[0].score >= 60) {
+    students[3].courses[0].letterGrade = 'D';
+} else {
+    students[3].courses[0].letterGrade = 'F';
+}
+
+if (students[3].courses[1].score >= 90) {
+    students[3].courses[1].letterGrade = 'A';
+} else if (students[3].courses[1].score >= 80) {
+    students[3].courses[1].letterGrade = 'B';
+} else if (students[3].courses[1].score >= 70) {
+    students[3].courses[1].letterGrade = 'C';
+} else if (students[3].courses[1].score >= 60) {
+    students[3].courses[1].letterGrade = 'D';
+} else {
+    students[3].courses[1].letterGrade = 'F';
+}
+
+if (students[3].courses[2].score >= 90) {
+    students[3].courses[2].letterGrade = 'A';
+} else if (students[3].courses[2].score >= 80) {
+    students[3].courses[2].letterGrade = 'B';
+} else if (students[3].courses[2].score >= 70) {
+    students[3].courses[2].letterGrade = 'C';
+} else if (students[3].courses[2].score >= 60) {
+    students[3].courses[2].letterGrade = 'D';
+} else {
+    students[3].courses[2].letterGrade = 'F';
+}
+
+if (students[3].courses[3].score >= 90) {
+    students[3].courses[3].letterGrade = 'A';
+} else if (students[3].courses[3].score >= 80) {
+    students[3].courses[3].letterGrade = 'B';
+} else if (students[3].courses[3].score >= 70) {
+    students[3].courses[3].letterGrade = 'C';
+} else if (students[3].courses[3].score >= 60) {
+    students[3].courses[3].letterGrade = 'D';
+} else {
+    students[3].courses[3].letterGrade = 'F';
+}
+
+let sum4 = 0;
+if (students[3].courses[0].letterGrade === 'A') sum4 = sum4 + 4;
+if (students[3].courses[0].letterGrade === 'B') sum4 = sum4 + 3;
+if (students[3].courses[0].letterGrade === 'C') sum4 = sum4 + 2;
+if (students[3].courses[0].letterGrade === 'D') sum4 = sum4 + 1;
+
+if (students[3].courses[1].letterGrade === 'A') sum4 = sum4 + 4;
+if (students[3].courses[1].letterGrade === 'B') sum4 = sum4 + 3;
+if (students[3].courses[1].letterGrade === 'C') sum4 = sum4 + 2;
+if (students[3].courses[1].letterGrade === 'D') sum4 = sum4 + 1;
+
+if (students[3].courses[2].letterGrade === 'A') sum4 = sum4 + 4;
+if (students[3].courses[2].letterGrade === 'B') sum4 = sum4 + 3;
+if (students[3].courses[2].letterGrade === 'C') sum4 = sum4 + 2;
+if (students[3].courses[2].letterGrade === 'D') sum4 = sum4 + 1;
+
+if (students[3].courses[3].letterGrade === 'A') sum4 = sum4 + 4;
+if (students[3].courses[3].letterGrade === 'B') sum4 = sum4 + 3;
+if (students[3].courses[3].letterGrade === 'C') sum4 = sum4 + 2;
+if (students[3].courses[3].letterGrade === 'D') sum4 = sum4 + 1;
+
+students[3].gpa = sum4 / 4;
 
 console.log(students);
